@@ -11,6 +11,12 @@ def work_experience_page(request):
 def projects_page(request):
     return render(request,"projects.html",{})
 
+def software_projects_page(request):
+    return render(request,"software.html",{})
+def d3clarity(request):
+    return render(request,"d3clarity.html",{})
+def mechanical_projects_page(request):
+    return render(request,"mechanical.html",{})
 def goals_page(request):
     return render(request,"goals.html",{})
 def artwork_page(request):
