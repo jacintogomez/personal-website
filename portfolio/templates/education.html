@@ -1,24 +1,63 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Education</title>
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+    <style>
+        body {
+            transition: background-color .5s ease;
+        }
+        section {
+            height: 100vh;
+        }
+        segment {
+            height: 25vh;
+        }
+        p{
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+    </style>
 </head>
 <body>
+<section data-color="#FFCCCB">
 <h1>Education</h1>
-{% load static %}
 <h3>Undergraduate Degree - Cornell University</h3>
+<h3>Bachelor of Science: Mechanical Engineering</h3>
+<h3>Minor: Business Administration</h3>
+<div class="center">
 <img src="/static/img/cornelllogo.png" height=50% width=50% alt="Cornell Logo">
+</div>
 <p>
     I graduated from Cornell in 2020 with a BS in Mechanical Engineering. I always had a love for creating
     things which lead me to pursue a degree in engineering. At Cornell, I focused my studies mainly on areas
     related to product design and mechatronics, which were my two favorite areas of mechanical engineering.
 </p>
+</section>
+<section data-color="#CBC3E3">
 <h3>Graduate Degree - New York University</h3>
+<h3>Master of Science: Computer Science</h3>
+<div class="center">
 <img src="/static/img/nyulogo.png" height=50% width=50% alt="NYU Logo">
+</div>
 <p>
     I am scheduled to graduate from NYU this coming spring (May 2023) and finish my MS in Computer Science. While at Cornell
     we had to take several courses in CS for our degree requirements, and although I wasn’t great at it at the time,
     I developed a liking for coding
 </p>
+</section>
+<section data-color="#CBC3E3"></section>
+<script>
+  const sections = document.querySelectorAll('section')
+
+  document.addEventListener('scroll', () => {
+    sections.forEach(section => {
+      if(section.getBoundingClientRect().top <= document.body.scrollTop) {
+        document.body.style.background = section.dataset.color
+      }
+    })
+  })
+</script>
 </body>
