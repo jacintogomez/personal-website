@@ -10,10 +10,7 @@
             transition: background-color .5s ease;
         }
         section {
-            height: 100vh;
-        }
-        segment {
-            height: 25vh;
+            height: 66vh;
         }
         p{
             padding-left: 15%;
@@ -22,7 +19,7 @@
     </style>
 </head>
 <body>
-<section data-color="#FFCCCB">
+<section data-color="red">
 <h1>Education</h1>
 <h3>Undergraduate Degree - Cornell University</h3>
 <h3>Bachelor of Science: Mechanical Engineering</h3>
@@ -30,13 +27,14 @@
 <div class="center">
 <img src="/static/img/cornelllogo.png" height=50% width=50% alt="Cornell Logo">
 </div>
+</section>
+<section data-color="#7600BC">
 <p>
     I graduated from Cornell in 2020 with a BS in Mechanical Engineering. I always had a love for creating
     things which lead me to pursue a degree in engineering. At Cornell, I focused my studies mainly on areas
     related to product design and mechatronics, which were my two favorite areas of mechanical engineering.
 </p>
-</section>
-<section data-color="#CBC3E3">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <h3>Graduate Degree - New York University</h3>
 <h3>Master of Science: Computer Science</h3>
 <div class="center">
@@ -48,10 +46,11 @@
     I developed a liking for coding
 </p>
 </section>
-<section data-color="#CBC3E3"></section>
+<section data-color="#7600BC"></section>
+<section data-color="#7600BC"></section>
 <script>
   const sections = document.querySelectorAll('section')
-
+  document.body.style.background="red"
   document.addEventListener('scroll', () => {
     sections.forEach(section => {
       if(section.getBoundingClientRect().top <= document.body.scrollTop) {

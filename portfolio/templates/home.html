@@ -4,23 +4,45 @@
 <head>
   <meta charset="utf-8">
   <title>Jacinto's Website</title>
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <style>
         body {
-            background-image: url("/static/img/homebackground.jpeg");
+            background-image: url("/static/img/homebg2.jpeg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            background-color: rgba(255,255,255,0.2);
+            background-color: rgba(255,255,255,0.1);
             background-blend-mode: lighten;
+        }
+        .linkbox{
+            border-style: solid;
+            border-color: black;
+            background-color: gray;
+            padding: 25px 50px 25px 50px;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
         }
     </style>
 </head>
 <body>
+<div class="center">
 <h1>Personal Website</h1>
-    <a href="/education">Education</a><br>
-    <a href="/work_experience">Work Experience</a><br>
-    <a href="/projects">Projects</a><br>
-    <a href="/goals">Goals</a><br>
-    <a href="/contact">Contact Me</a><br>
-    <a href="/help">Help</a><br>
+    <a class="linkbox" href="/education">Education</a><br><br><br><br><br>
+<div class="linkbox">
+    <a href="/work_experience">Work Experience</a><br><br><br><br><br>
+</div>
+<div class="linkbox">
+    <a class="linkbox" href="/projects">Projects</a><br><br><br><br><br>
+</div>
+<div class="linkbox">
+    <a class="linkbox" href="/goals">Goals</a><br><br><br><br><br>
+</div>
+<div class="linkbox">
+    <a class="linkbox" href="/contact">Contact Me</a><br><br><br><br><br>
+</div>
+<div class="linkbox">
+    <a class="linkbox" href="/help">Help</a><br><br><br><br><br>
+</div>
+</div>
 </body>
