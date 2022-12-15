@@ -14,35 +14,49 @@
             background-color: rgba(255,255,255,0.1);
             background-blend-mode: lighten;
         }
-        .linkbox{
+        a.linkbox{
             border-style: solid;
             border-color: black;
             background-color: gray;
-            padding: 25px 50px 25px 50px;
+            display: inline-block;
+            width: 200px;
+            padding: 25px 200px 25px 200px;
             border-radius: 5px;
             text-align: center;
-            position: relative;
+            position: center;
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        a:hover{
+            border-color: yellow;
+        }
+        .extern {
+            padding-bottom: 25px;
+            padding-top: 25px;
         }
     </style>
 </head>
 <body>
 <div class="center">
 <h1>Personal Website</h1>
-    <a class="linkbox" href="/education">Education</a><br><br><br><br><br>
-<div class="linkbox">
-    <a href="/work_experience">Work Experience</a><br><br><br><br><br>
-</div>
-<div class="linkbox">
-    <a class="linkbox" href="/projects">Projects</a><br><br><br><br><br>
-</div>
-<div class="linkbox">
-    <a class="linkbox" href="/goals">Goals</a><br><br><br><br><br>
-</div>
-<div class="linkbox">
-    <a class="linkbox" href="/contact">Contact Me</a><br><br><br><br><br>
-</div>
-<div class="linkbox">
-    <a class="linkbox" href="/help">Help</a><br><br><br><br><br>
-</div>
+    <div class="extern">
+        <a class="linkbox" href="/education">Education</a><br><br><br><br><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/work_experience">Work Experience</a><br><br><br><br><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/projects">Projects</a><br><br><br><br><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/goals">Goals</a><br><br><br><br><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/contact">Contact Me</a><br><br><br><br><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/help">Help</a><br><br><br><br><br>
+    </div>
 </div>
 </body>
