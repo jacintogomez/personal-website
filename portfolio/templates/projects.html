@@ -1,13 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Projects</title>
+  <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
 </head>
 <body>
+<div class="center">
 <h1>Projects</h1>
-    <a href="/software">Software Engineering</a><br>
-    <a href="/mechanical">Mechanical Engineering</a><br>
-    <a href="/artwork">Artwork</a><br>
+<div class="extern">
+    <a class="linkbox" href="/software">Software Engineering</a><br>
+</div>
+<div class="extern">
+    <a class="linkbox" href="/mechanical">Mechanical Engineering</a><br>
+</div>
+<div class="extern">
+    <a class="linkbox" href="/artwork">Artwork</a><br>
+</div>
+</div>
 </body>
 </html>

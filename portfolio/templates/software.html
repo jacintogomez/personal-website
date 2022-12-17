@@ -1,11 +1,26 @@
 <!DOCTYPE html>
+{%  load static %}
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Software Engineering</title>
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
 </head>
 <body>
+<div class="center">
 <h1>Software Engineering Projects</h1>
-<a href="/d3clarity">D3 Clarity Exercise</a><br>
+    <div class="extern">
+        <a class="linkbox" href="/d3hatecrimes">FBI Hate Crime Statistics</a><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/d3aiddata">World Aid Data Between Countries</a><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/d3clarity">Clarity</a><br>
+    </div>
+    <div class="extern">
+        <a class="linkbox" href="/d3color">Color</a><br>
+    </div>
+</div>
 </body>
 </html>
