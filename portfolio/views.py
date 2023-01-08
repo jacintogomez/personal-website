@@ -6,6 +6,8 @@ def home_page(request):
 
 def education_page(request):
     return render(request,"education.html",{})
+def about_page(request):
+    return render(request,"about.html",{})
 def work_experience_page(request):
     return render(request,"workexperience.html",{})
 def projects_page(request):
@@ -13,6 +15,8 @@ def projects_page(request):
 
 def software_projects_page(request):
     return render(request,"software.html",{})
+def palloc_page(request):
+    return render(request,"payalloc.html",{})
 def d3clarity(request):
     return render(request,"d3clarity.html",{})
 def d3color(request):
