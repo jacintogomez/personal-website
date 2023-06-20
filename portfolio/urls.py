@@ -9,6 +9,7 @@ urlpatterns = [
     path('projects/',views.projects_page,name='projects'),
     path('software/',views.software_projects_page,name='software'),
     path('palloc/',views.palloc_page,name='palloc'),
+    path('sortingalgos/',views.algos_page,name='algos'),
     path('d3clarity/',views.d3clarity,name='d3clarity'),
     path('d3color/',views.d3color,name='d3color'),
     path('d3aiddata/',views.d3aiddata,name='d3aiddata'),
