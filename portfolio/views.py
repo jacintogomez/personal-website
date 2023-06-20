@@ -15,6 +15,8 @@ def projects_page(request):
 
 def software_projects_page(request):
     return render(request,"software.html",{})
+def algos_page(request):
+    return render(request,"algoconsole.html",{})
 def palloc_page(request):
     return render(request,"payalloc.html",{})
 def d3clarity(request):
