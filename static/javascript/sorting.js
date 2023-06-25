@@ -338,6 +338,7 @@ function bogo(ar){
     if(iteration>100){
         appendtext("Stopped after 100 iterations, was not sorted :(");
     }
+
     return ar;
 }
 
