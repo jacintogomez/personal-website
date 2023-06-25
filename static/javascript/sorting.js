@@ -9,6 +9,7 @@ function main(choice,s,bn){
     if(ar==='invalid'){
         appendtext('Invalid array entry, must be all ints');
         return;
+
     }
     switch(choice){
         case 'merge':
