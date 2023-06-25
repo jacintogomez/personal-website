@@ -9,3 +9,5 @@ cd Desktop,
 cd jacinto, 
 eb open, 
 eb deploy, 
+
+Run Django: python manage.py runserver
