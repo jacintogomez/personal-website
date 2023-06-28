@@ -100,13 +100,14 @@
     <h6>Creates two new arrays, one counting the frequency of occurrence of each number in the array (then adjusted
         to represent the array index), and the other to hold the output array. The output array at index i is updated with the
         value of indexarray[originalarray[i]] for each i in range n. This results in linear runtime, but it only works
-        if the range of numbers is known beforehand. This is also a stable sort, meaning the order of repeated values doesn't change</h6>
+        if the range of numbers is known beforehand. This is also a stable sort, meaning the order of repeated values doesn't change.</h6>
     <h5 style="font-family:monospace;">Time Complexity: Theta(n+k), k=range of possible values</h5>
     <h5 style="font-family:monospace;">Space Complexity: O(k)</h5>
     <h5>---------------------------------------------------------------------------------------------------------</h5>
     <h3>Radix Sort</h3>
     <h6>This will first sort all elements by the digit in the 1's place, then by the digit in the 10's place.. continuing
-          through to the last digit. The sorting is done with some stable sorting algorithm (counting sort, for example).</h6>
+          through to the last digit. The sorting is done with some stable sorting algorithm (counting sort, for example).
+        It may seem more natural to soort by the largest digit first down to the 1's place but this mathematically will not work.</h6>
     <h5 style="font-family:monospace;">Time Complexity: Theta(d(n+k)), d=max # of digits, k=base of whatever number we are using (usually 10)</h5>
     <h5 style="font-family:monospace;">Space Complexity: O(n+k)</h5>
     <h5>---------------------------------------------------------------------------------------------------------</h5>
@@ -141,7 +142,7 @@
   <br><br>
       <input type='text' id='inputfield' style="width:250px;" placeholder='example: enter [3,1,2] as 3 1 2'><br><br>
       <div id="numbuckets" class="hidden">
-          <h4>If you want to choose your number of buckets then enter it below,<br>otherwise enter 0 to use the square root of n</h4>
+          <h4>If you want to choose your number of buckets then enter it below,<br>blank or input<1 will result in the automatic use the square root of n</h4>
         <input type="text" id="tinput" placeholder="# of buckets">
       </div>
       <button onclick='main(document.getElementById("algos").value,document.getElementById("inputfield").value,document.getElementById("tinput").value)'>Sort</button>
