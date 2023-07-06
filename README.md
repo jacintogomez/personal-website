@@ -1,6 +1,7 @@
 # personal-website
 
-Personal Website!
+See here:
+http://web-env.eba-nfmycmne.us-east-1.elasticbeanstalk.com/
 
 Commit changes to local pycharm files and push to github
 
