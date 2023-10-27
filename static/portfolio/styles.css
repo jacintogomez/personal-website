@@ -6,25 +6,29 @@
 }
 a.linkbox{
     border-style: solid;
-    border-color: gray;
-    background-color: gray;
+    border-color: white;
+    border-width: 5px;
+    background-color: black;
     display: inline-block;
     width: 200px;
-    padding: 25px 200px 25px 200px;
+    height: 100px;
+    padding: 10px;
     border-radius: 5px;
-    text-align: center;
     position: center;
-    color: black;
+    color: white;
     font-size: 20px;
     text-decoration: none;
+    line-height: 100px;
+    margin: 5px;
+    transition: border-color 0.3s;
 }
 a:hover{
-    border-color: yellow;
-    color: yellow;
+    border-color: black;
+    color: white;
 }
 .extern {
-    padding-bottom: 25px;
-    padding-top: 25px;
+    text-align: center;
+    padding: 25px 0;
 }
 .pictureoval{
     border-style: solid;
