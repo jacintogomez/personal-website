@@ -19,7 +19,7 @@ a.linkbox{
     font-size: 20px;
     text-decoration: none;
     line-height: 100px;
-    margin: 5px;
+    margin: 25px;
     transition: border-color 0.3s;
 }
 a:hover{
@@ -28,7 +28,7 @@ a:hover{
 }
 .extern {
     text-align: center;
-    padding: 25px 0;
+    padding: 0px 0px;
 }
 .pictureoval{
     border-style: solid;
