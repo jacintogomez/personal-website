@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Jacinto's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+    <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
     <style>
         body {
             background-image: url("/static/img/homebg2.jpeg");
@@ -18,6 +21,7 @@
     </style>
 </head>
 <body>
+{%  include 'common/navbar.html' %}
 <div class="center">
 <h1>Jacinto Gomez</h1>
     <div class="extern">
