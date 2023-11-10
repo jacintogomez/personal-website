@@ -3,8 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Jacinto's Website</title>
+  <title>Jacinto Gomez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+    <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
     <style>
         body {
             background-image: url("/static/img/homebg2.jpeg");
@@ -18,28 +20,30 @@
     </style>
 </head>
 <body>
+{%  include 'common/navbar.html' %}
 <div class="center">
-<h1>Jacinto Gomez</h1>
+    <h1>大家好！</h1>
     <div class="extern">
-        <a class="linkbox" href="/about">About</a><br><br><br><br><br>
+        <a class="linkbox" href="https://www.nycaccessiblestreets.ml/home/">NYC Accessible Streets</a>
+        <a class="linkbox" href="/sortingalgos">Algorithms</a>
+        <a class="linkbox" href="/battleship">Battleship</a>
     </div>
     <div class="extern">
-        <a class="linkbox" href="/education">Education</a><br><br><br><br><br>
+        <a class="linkbox" href="/bracktes">Bracket Maker</a>
+        <a class="linkbox" href="/nyual">Augmented Library</a>
+        <a class="linkbox" href="/palloc">Payment Allocator</a>
+        <a class="linkbox" href="/d3hatecrimes">FBI Hate Crimes</a>
     </div>
     <div class="extern">
-        <a class="linkbox" href="/work_experience">Work Experience</a><br><br><br><br><br>
+        <a class="linkbox" href="/about">Planet Birthdays</a>
+        <a class="linkbox" href="/d3aiddata">World Aid Data</a>
+        <a class="linkbox" href="/mechanical">Mechanical Engineering</a>
     </div>
     <div class="extern">
-        <a class="linkbox" href="/projects">Projects</a><br><br><br><br><br>
-    </div>
-    <div class="extern">
-        <a class="linkbox" href="/goals">Goals</a><br><br><br><br><br>
-    </div>
-    <div class="extern">
-        <a class="linkbox" href="/contact">Contact Me</a><br><br><br><br><br>
-    </div>
-    <div class="extern">
-        <a class="linkbox" href="/help">Help</a><br><br><br><br><br>
+        <a class="linkbox" href="/about">About</a>
+        <a class="linkbox" href="/work_experience">Work Experience</a>
+        <a class="linkbox" href="/contact">Contact Me</a>
+        <a class="linkbox" href="/artwork">Artwork</a>
     </div>
 </div>
 </body>

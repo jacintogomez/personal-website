@@ -1,3 +1,7 @@
+.page-title{
+    text-align: center;
+}
+
 .center{
     text-align: center;
 }
@@ -6,26 +10,42 @@
 }
 a.linkbox{
     border-style: solid;
-    border-color: gray;
-    background-color: gray;
+    border-color: white;
+    border-width: 5px;
+    background-color: #338D91;
     display: inline-block;
     width: 200px;
-    padding: 25px 200px 25px 200px;
+    height: 100px;
+    padding: 10px;
     border-radius: 5px;
-    text-align: center;
     position: center;
-    color: black;
+    color: white;
     font-size: 20px;
     text-decoration: none;
+    line-height: 100px;
+    margin: 25px;
+    transition: transform .3s,border-color .3s,color .3s;
 }
 a:hover{
-    border-color: yellow;
-    color: yellow;
+    transform: scale(1.05);
+    border-opacity: 50%
 }
 .extern {
-    padding-bottom: 25px;
-    padding-top: 25px;
+    text-align: center;
+    padding: 0px 0px;
 }
+
+.zoom{
+    transition: transform .2s;
+    width: 210px;
+    height: 105px;
+    margin: 0 auto;
+}
+
+.zoom:hover{
+    transform: scale(1.5);
+}
+
 .pictureoval{
     border-style: solid;
     border-color: black;
@@ -37,3 +57,41 @@ a:hover{
     position: center;
     text-align: center;
 }
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #338D91;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.navbar-nav{
+    list-style: none;
+    display: flex;
+}
+.nav-item{
+    margin-right: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+.navbar-brand:hover{
+    opacity: 50%;
+}
+.nav-link:hover{
+    opacity: 50%;
+}
+
