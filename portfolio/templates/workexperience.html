@@ -6,16 +6,26 @@
   <title>Work Experience</title>
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <style>
-        .job {
-
+        img{
+            height: 50px;
+            text-aligh: center;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            padding-left: 25%;
+            padding-right: 25%;
         }
     </style>
 </head>
 <body>
-<h1>Work Experience</h1>
+{% include 'common/navbar.html' %}
+<h1 class="page-title">Work Experience</h1>
 <div class="center">
     <div class="pictureoval">
-        <img src="/static/img/nyutandonlogo.png" height=100% width=100% alt="NYU Tandon Logo">
+        <img src="/static/img/nyutandonlogo.png" alt="NYU Tandon Logo">
     </div>
 </div>
 <h2>Teaching Assistant: NYU Tandon School of Engineering</h2>
@@ -27,7 +37,7 @@
 </p>
 <div class="center">
     <div class="pictureoval">
-        <img src="/static/img/nyucnslogo.png" height=100% width=100% alt="NYU CNS Logo">
+        <img src="/static/img/nyucnslogo.png" alt="NYU CNS Logo">
     </div>
 </div>
 <h2>Laboratory Engineer: NYU Center for Neural Science</h2>
@@ -38,7 +48,7 @@
 </p>
 <div class="center">
     <div class="pictureoval">
-        <img src="/static/img/cornellengineeringlogo.png" height=100% width=100% alt="Cornell Engineering Logo">
+        <img src="/static/img/cornellengineeringlogo.png" alt="Cornell Engineering Logo">
     </div>
 </div>
 <h2>Product Design Engineer: Cornell Engineering</h2>
@@ -63,7 +73,7 @@
 </p>
 <div class="center">
     <div class="pictureoval">
-        <img src="/static/img/rdalogo.png" height=100% width=100% alt="RDA Logo">
+        <img src="/static/img/rdalogo.png" alt="RDA Logo">
     </div>
 </div>
 <h2>Consulting Engineer Intern: Robert Derector Associates</h2>
@@ -73,18 +83,18 @@
 </p>
 <div class="center">
     <div class="pictureoval">
-        <img src="/static/img/lifeguardlogo.jpeg" height=100% width=100% alt="Lifeguard Logo">
+        <img src="/static/img/lifeguardlogo.jpeg" alt="Lifeguard Logo">
     </div>
 </div>
 <h2>Lifeguard: Rolling Hills Condominiums, Brookshire Condominiums, Newburgh YWCA</h2>
 <p>
     I worked for several years as a lifeguard for various pool locations across the Hudson Valley area. In these
     positions I performed standard lifeguard tasks such as watching over pool patrons, maintaining pool deck
-    cleanliness, and ensuring that safety equipment is up to date.
+    cleanliness, and ensuring that safety equipment is up-to-date.
 </p>
 <div class="center">
     <div class="pictureoval">
-        <img src="/static/img/washingtonvillelogo.jpg" height=100% width=100% alt="Washingtonville Logo">
+        <img src="/static/img/washingtonvillelogo.jpg" alt="Washingtonville Logo">
     </div>
 </div>
 <h2>Swimming Instructor: Washingtonville Seahawks</h2>

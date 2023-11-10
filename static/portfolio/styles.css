@@ -28,11 +28,10 @@ a.linkbox{
 }
 a:hover{
     transform: scale(1.05);
-    border-opacity: 50%
 }
 .extern {
     text-align: center;
-    padding: 0px 0px;
+    padding: 0 0;
 }
 
 .zoom{
@@ -90,6 +89,7 @@ body, ul {
 }
 .navbar-brand:hover{
     opacity: 50%;
+    transform: none !important;
 }
 .nav-link:hover{
     opacity: 50%;

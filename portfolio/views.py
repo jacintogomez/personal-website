@@ -20,13 +20,13 @@ def algos_page(request):
 def palloc_page(request):
     return render(request,"payalloc.html",{})
 def d3clarity(request):
-    return render(request,"d3clarity.html",{})
+    return render(request, "d3pages/d3clarity.html", {})
 def d3color(request):
-    return render(request,"d3color.html",{})
+    return render(request, "d3pages/d3color.html", {})
 def d3hatecrimes(request):
-    return render(request,"d3hatecrimes.html",{})
+    return render(request, "d3pages/d3hatecrimes.html", {})
 def d3aiddata(request):
-    return render(request,"d3aiddata.html",{})
+    return render(request, "d3pages/d3aiddata.html", {})
 def mechanical_projects_page(request):
     return render(request,"mechanical.html",{})
 def goals_page(request):
