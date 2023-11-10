@@ -8,7 +8,7 @@ a.linkbox{
     border-style: solid;
     border-color: white;
     border-width: 5px;
-    background-color: black;
+    background-color: #338D91;
     display: inline-block;
     width: 200px;
     height: 100px;
@@ -20,16 +20,28 @@ a.linkbox{
     text-decoration: none;
     line-height: 100px;
     margin: 25px;
-    transition: border-color 0.3s;
+    transition: transform .3s,border-color .3s,color .3s;
 }
 a:hover{
-    border-color: black;
-    color: white;
+    transform: scale(1.05);
+    border-opacity: 50%
 }
 .extern {
     text-align: center;
     padding: 0px 0px;
 }
+
+.zoom{
+    transition: transform .2s;
+    width: 210px;
+    height: 105px;
+    margin: 0 auto;
+}
+
+.zoom:hover{
+    transform: scale(1.5);
+}
+
 .pictureoval{
     border-style: solid;
     border-color: black;
@@ -41,6 +53,7 @@ a:hover{
     position: center;
     text-align: center;
 }
+
 body, ul {
     margin: 0;
     padding: 0;
