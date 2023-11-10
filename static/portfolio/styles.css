@@ -46,7 +46,7 @@ body, ul {
     padding: 0;
 }
 .navbar {
-    background-color: #18435A;
+    background-color: #338D91;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,6 +57,7 @@ body, ul {
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
+    margin-left: 20px;
 }
 .navbar-nav{
     list-style: none;
@@ -68,6 +69,7 @@ body, ul {
 .nav-link{
     text-decoration: none;
     color: white;
+    margin: 5px;
 }
 .navbar-brand:hover{
     opacity: 50%;
