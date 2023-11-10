@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>About</title>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
 </head>
 <body>
+{% include 'common/navbar.html' %}
 <div class="center">
-    <h1>About</h1>
+    <h1 class="page-title">About</h1>
     <p>
         This is a personal website I started in December 2022; It is being made solely by me using Django/Python and
         is a work in progress, so there will be frequent updates to the site as my changes are pushed to the live
