@@ -8,7 +8,7 @@
 .right{
     text-align: right;
 }
-a.linkbox{
+a.link-box{
     border-style: solid;
     border-color: white;
     border-width: 5px;
@@ -40,21 +40,29 @@ a:hover{
     height: 105px;
     margin: 0 auto;
 }
-
 .zoom:hover{
     transform: scale(1.5);
 }
 
-.pictureoval{
-    border-style: solid;
-    border-color: black;
-    background-color: white;
-    display: inline-block;
-    width: 200px;
-    padding: 50px 200px 50px 200px;
-    border-radius: 60px;
-    position: center;
+.job-desc{
+    flex: 1;
     text-align: center;
+}
+.job{
+    display: flex;
+    padding: 50px 0;
+}
+.picture-oval{
+    display: flex;
+    flex: 1;
+    align-items: center; /*center vertically*/
+    justify-content: center; /*center horizontally*/
+    margin: auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    border-radius: 60px;
 }
 
 body, ul {
