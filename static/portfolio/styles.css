@@ -24,9 +24,9 @@ a.link-box{
     text-decoration: none;
     line-height: 100px;
     margin: 25px;
-    transition: transform .3s,border-color .3s,color .3s;
+    transition: transform .3s;
 }
-a:hover{
+a.link-box:hover{
     transform: scale(1.05);
 }
 .extern {

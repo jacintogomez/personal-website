@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
   <style>
+      img{
+          border-radius: 50%;
+          align-items: center;
+      }
       .contact-heading{
           flex: 1;
           text-align: center;
       }
       .inner-image{
           flex: 1;
+          display: flex;
           justify-content: space-around;
+          margin: 10px;
       }
       .inner-image img{
           max-width: 80%;
@@ -22,8 +28,16 @@
       .contact-block{
           flex: 1;
           display: flex;
-          background-color: gray;
+          background-color: white;
           margin: 10px;
+          border-radius: 50px;
+          border-style: solid;
+          border-color: #338D91;
+          border-width: 10px;
+          transition: .5s;
+      }
+      .contact-block:hover{
+          background-color: #338D91;
       }
       .block-row{
           display: flex;
@@ -41,30 +55,30 @@
         <h3 class="contact-heading">Instagram</h3>
     </div>
     <div class="block-row">
-        <div class="contact-block">
+        <a href="https://github.com/jacintogomez" target="_blank" class="contact-block">
             <div class="inner-image">
                 <img src="static/img/github-logo.png">
             </div>
             <div class="inner-image">
                 <img src="static/img/github-profile.png">
             </div>
-        </div>
-        <div class="contact-block">
+        </a>
+        <a href="https://www.linkedin.com/in/jacinto-gomez/" target="_blank" class="contact-block">
             <div class="inner-image">
                 <img src="static/img/linkedin-logo.png">
             </div>
             <div class="inner-image">
                 <img src="static/img/linkedin-profile.jpeg">
             </div>
-        </div>
-        <div class="contact-block">
+        </a>
+        <a href="https://www.instagram.com/jacinto_gomez/" target="_blank" class="contact-block">
             <div class="inner-image">
                 <img src="static/img/instagram-logo.png">
             </div>
             <div class="inner-image">
                 <img src="static/img/instagram-profile.jpeg">
             </div>
-        </div>
+        </a>
     </div>
 </body>
 </html>
