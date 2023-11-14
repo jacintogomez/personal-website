@@ -6,45 +6,55 @@
     <title>Contact Me</title>
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
-  <style>
-      img{
-          border-radius: 50%;
-          align-items: center;
-      }
-      .contact-heading{
-          flex: 1;
-          text-align: center;
-      }
-      .inner-image{
-          flex: 1;
-          display: flex;
-          justify-content: space-around;
-          margin: 10px;
-      }
-      .inner-image img{
-          max-width: 80%;
-          height: auto;
-      }
-      .contact-block{
-          flex: 1;
-          display: flex;
-          background-color: white;
-          margin: 10px;
-          border-radius: 50px;
-          border-style: solid;
-          border-color: #338D91;
-          border-width: 10px;
-          transition: .5s;
-      }
-      .contact-block:hover{
-          background-color: #338D91;
-      }
-      .block-row{
-          display: flex;
-          margin-left: 5px;
-          margin-right: 5px;
-      }
-  </style>
+    <style>
+        img{
+            border-radius: 50%;
+            align-items: center;
+        }
+        .contact-heading{
+            flex: 1;
+            text-align: center;
+        }
+        .inner-image{
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        .inner-image img{
+            max-width: 80%;
+            height: auto;
+        }
+        .contact-block{
+            flex: 1;
+            display: flex;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50px;
+            border-style: solid;
+            border-color: #338D91;
+            border-width: 10px;
+            transition: .5s;
+        }
+        .contact-block:hover{
+            background-color: #6C6C70;
+            border-color: #6C6C70;
+        }
+        .contact-block:nth-child(2):hover {
+            background-color: #498EB3;
+            border-color: #498EB3
+        }
+
+        .contact-block:nth-child(3):hover {
+            background-color: #C13584;
+            border-color: #C13584;
+        }
+        .block-row{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
 {% include 'common/navbar.html' %}
