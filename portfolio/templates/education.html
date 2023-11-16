@@ -7,62 +7,74 @@
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
     <style>
-        body {
+        body{
+            margin: 0;
+            {#background: radial-gradient(circle,white,red);#}
+            background: linear-gradient(-90deg,red,#7600BC);
             transition: background-color .5s;
         }
         section {
             height: 66vh;
+            position: relative;
+            z-index: 1;
         }
         p{
             padding-left: 15%;
             padding-right: 15%;
         }
+        #homenav{
+            background-color: red;
+            transition: background-color .5s;
+        }
     </style>
 </head>
 <body>
 {% include 'common/navbar.html' %}
-<section data-color="red">
-<h1 class="page-title">Education</h1>
-<h3>Undergraduate Degree - Cornell University</h3>
-<h3>Bachelor of Science: Mechanical Engineering</h3>
-<h3>Minor: Business Administration</h3>
-<div class="center">
-    <div class="pictureoval">
-        <img src="/static/img/cornelllogo.png" height=100% width=100% alt="Cornell Logo">
+    <section data-color="red">
+    <h1 class="page-title">Education</h1>
+    <h3>Undergraduate Degree - Cornell University</h3>
+    <h3>Bachelor of Science: Mechanical Engineering</h3>
+    <h3>Minor: Business Administration</h3>
+    <div class="center">
+        <div class="picture-oval" style="margin: 0 300px">
+            <img src="/static/img/cornelllogo.png" height=100px alt="Cornell Logo">
+        </div>
     </div>
-</div>
-</section>
-<section data-color="#7600BC">
-<p>
-    I graduated from Cornell in 2020 with a BS in Mechanical Engineering. I focused my studies mainly on areas
-    related to product design and mechatronics. Outside the classroom I was involved in the Varsity Track & Field
-    team, Alpha Phi Omega service fraternity, and triathlon club.
-</p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h3>Graduate Degree - New York University</h3>
-<h3>Master of Science: Computer Science</h3>
-<div class="center">
-    <div class="pictureoval">
-        <img src="/static/img/nyulogo.png" height=100% width=100% alt="NYU Logo">
+    </section>
+    <section data-color="#7600BC">
+    <p>
+        I graduated from Cornell in 2020 with a BS in Mechanical Engineering. I focused my studies mainly on areas
+        related to product design and mechatronics. Outside the classroom I was involved in the Varsity Track & Field
+        team, Alpha Phi Omega service fraternity, and triathlon club.
+    </p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>Graduate Degree - New York University</h3>
+    <h3>Master of Science: Computer Science</h3>
+    <div class="center">
+        <div class="picture-oval" style="margin: 0 300px">
+            <img src="/static/img/nyulogo.png" height=100px alt="NYU Logo">
+        </div>
     </div>
-</div>
-<p>
-    I will graduate from NYU in Spring 2024 with an MS in Computer Science. I focused my studies mainly on web
-    design and machine learning. Additionally, I am involved in the cyber security club and rock climbing club team.
-</p>
-</section>
-<section data-color="#7600BC"></section>
-<section data-color="#7600BC"></section>
-<script>
-  const sections = document.querySelectorAll('section')
-  document.body.style.background="red"
-  document.addEventListener('scroll', () => {
-    sections.forEach(section => {
-      if(section.getBoundingClientRect().top <= document.body.scrollTop) {
-        document.body.style.background = section.dataset.color
-      }
-    })
-  })
-</script>
+    <p>
+        I will graduate from NYU in Spring 2024 with an MS in Computer Science. I focused my studies mainly on web
+        design and machine learning. Additionally, I am involved in the cybersecurity club and rock climbing club team.
+    </p>
+    </section>
+    <section data-color="#7600BC"></section>
+    <script>
+        const sections=document.querySelectorAll('section');
+        const nav=document.getElementById('homenav');
+        nav.style.transition="background-color: .5s;";
+        document.addEventListener('scroll',()=>{
+            const scrollpos=window.scrollY;
+            sections.forEach(section=>{
+                const sectiontop=section.offsetTop;
+                const sectionbot=sectiontop+section.offsetHeight;
+                if(scrollpos>=sectiontop&&scrollpos<sectionbot){
+                    nav.style.backgroundColor=section.dataset.color;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
