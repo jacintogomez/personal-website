@@ -8,30 +8,54 @@
 .right{
     text-align: right;
 }
+.extern {
+    text-align: center;
+    padding: 0 0;
+    position: relative;
+}
 a.link-box{
     border-style: solid;
     border-color: white;
     border-width: 5px;
     background-color: #338D91;
-    display: inline-block;
+    display: inline-block; /*consistent width and height*/
     width: 200px;
     height: 100px;
     padding: 10px;
+    margin: 25px;
     border-radius: 5px;
-    position: center;
     color: white;
     font-size: 20px;
+    position: relative;
     text-decoration: none;
     line-height: 100px;
-    margin: 25px;
     transition: transform .3s;
+    z-index: 1;
 }
 a.link-box:hover{
     transform: scale(1.05);
 }
-.extern {
-    text-align: center;
-    padding: 0 0;
+.git-contain{
+    position: relative;
+    display: inline-block;
+}
+.git-pin{
+    background-color: yellow;
+    border-width: 2px;
+    border-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    z-index: 2;
+    margin: 35px;
+    transition: .3s;
+}
+.git-pin:hover{
+    border-color: yellow;
 }
 
 .zoom{

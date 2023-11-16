@@ -6,14 +6,25 @@
     <title>Projects</title>
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
+    <style>
+        body{
+            {#background: linear-gradient(45deg,red,blue);#}
+            background-color: lightblue;
+        }
+        a.link-box:hover + .git-pin{
+            margin: 30px;
+        }
+    </style>
 </head>
 <body>
 {% include 'common/navbar.html' %}
-<div class="center">
-<h1 class="page-title">Projects</h1>
-<h3>Click the red arrow to visit the project's GitHub repository</h3>
-<div class="extern">
-        <a class="link-box" href="https://www.nycaccessiblestreets.ml/home/">NYC Accessible Streets</a>
+    <h1 class="page-title">Projects</h1>
+    <h3 style="text-align: center">Click the arrow to visit the project's GitHub repository</h3>
+    <div class="extern">
+        <div class="git-contain">
+            <a class="link-box" href="https://www.nycaccessiblestreets.ml/home/">NYC Accessible Streets</a>
+            <a class="git-pin" href="https://www.google.com">G</a>
+        </div>
         <a class="link-box" href="/sortingalgos">Algorithms</a>
         <a class="link-box" href="/battleship">Battleship</a>
     </div>
@@ -26,8 +37,7 @@
     <div class="extern">
         <a class="link-box" href="/about">Planet Birthdays</a>
         <a class="link-box" href="/d3aiddata">World Aid Data</a>
-        <a class="link-box" href="/mechanical">Mechanical Engineering</a>
+        <a class="link-box" href="">This Site</a>
     </div>
-</div>
 </body>
 </html>
