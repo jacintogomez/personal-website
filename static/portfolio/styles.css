@@ -39,23 +39,26 @@ a.link-box:hover{
     position: relative;
     display: inline-block;
 }
+.git-half{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
 .git-pin{
-    background-color: yellow;
-    border-width: 2px;
-    border-color: black;
     height: 30px;
     width: 30px;
-    border-radius: 50%;
     position: absolute;
+    border-radius: 50%;
     bottom: 0;
     right: 0;
-    text-decoration: none;
     z-index: 2;
     margin: 35px;
     transition: .3s;
+    max-height: 100%;
 }
 .git-pin:hover{
-    border-color: yellow;
+    background: yellow;
 }
 
 .zoom{

@@ -14,30 +14,104 @@
         a.link-box:hover + .git-pin{
             margin: 30px;
         }
+        .git-pin:hover + a.link-box{
+            transform: scale(1.5);
+        }
+        img{
+            height: 20px;
+            width: auto;
+        }
     </style>
 </head>
 <body>
 {% include 'common/navbar.html' %}
     <h1 class="page-title">Projects</h1>
-    <h3 style="text-align: center">Click the arrow to visit the project's GitHub repository</h3>
+    <h3 style="text-align: center">Click the GitHub logo to visit the project's GitHub repository</h3>
     <div class="extern">
         <div class="git-contain">
             <a class="link-box" href="https://www.nycaccessiblestreets.ml/home/">NYC Accessible Streets</a>
-            <a class="git-pin" href="https://www.google.com">G</a>
+            <a class="git-pin" href="https://github.com/jacintogomez/nycaccessiblestreets">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
         </div>
-        <a class="link-box" href="/sortingalgos">Algorithms</a>
-        <a class="link-box" href="/battleship">Battleship</a>
+        <div class="git-contain">
+            <a class="link-box" href="/sortingalgos">Algorithms</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
+        <div class="git-contain">
+            <a class="link-box" href="/battleship">Battleship</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
     </div>
     <div class="extern">
-        <a class="link-box" href="/bracktes">Bracket Maker</a>
-        <a class="link-box" href="/nyual">Augmented Library</a>
-        <a class="link-box" href="/palloc">Payment Allocator</a>
-        <a class="link-box" href="/d3hatecrimes">FBI Hate Crimes</a>
+        <div class="git-contain">
+            <a class="link-box" href="/bracktes">Bracket Maker</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
+        <div class="git-contain">
+            <a class="link-box" href="/nyual">Augmented Library</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
+        <div class="git-contain">
+            <a class="link-box" href="/palloc">Payment Allocator</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
+        <div class="git-contain">
+            <a class="link-box" href="/d3hatecrimes">FBI Hate Crimes</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
     </div>
     <div class="extern">
-        <a class="link-box" href="/about">Planet Birthdays</a>
-        <a class="link-box" href="/d3aiddata">World Aid Data</a>
-        <a class="link-box" href="">This Site</a>
+        <div class="git-contain">
+            <a class="link-box" href="/about">Planet Birthdays</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
+        <div class="git-contain">
+            <a class="link-box" href="/d3aiddata">World Aid Data</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
+        <div class="git-contain">
+            <a class="link-box" href="">This Site</a>
+            <a class="git-pin" href="">
+                <div class="git-half">
+                    <img src="{% static 'img/github-logo.png' %}" alt="git logo">
+                </div>
+            </a>
+        </div>
     </div>
 </body>
 </html>
