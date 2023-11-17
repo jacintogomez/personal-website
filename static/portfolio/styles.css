@@ -54,11 +54,11 @@ a.link-box:hover{
     right: 0;
     z-index: 2;
     margin: 35px;
-    transition: .3s;
+    transition: transform .3s;
     max-height: 100%;
 }
 .git-pin:hover{
-    background: yellow;
+    transform: scale(1.4);
 }
 
 .zoom{
