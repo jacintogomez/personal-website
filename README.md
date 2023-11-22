@@ -11,13 +11,8 @@ http://web-env.eba-nfmycmne.us-east-1.elasticbeanstalk.com/
 4. Run command `pip install -r requirements.txt`
 5. Run command `python manage.py runserver --insecure`
 
-Commit changes to local pycharm files and push to github
-
-In terminal:
-source ~/.bash_profile
-cd Desktop
-cd jacinto
-eb open
-eb deploy
-
-Run Django: python manage.py runserver
+## In terminal:
+1. source ~/.bash_profile
+2. cd Desktop/jacinto
+3. eb open
+4. eb deploy
