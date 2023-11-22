@@ -11,7 +11,7 @@ http://web-env.eba-nfmycmne.us-east-1.elasticbeanstalk.com/
 4. Run command `pip install -r requirements.txt`
 5. Run command `python manage.py runserver --insecure`
 
-## In terminal:
+## In terminal -
 1. source ~/.bash_profile
 2. cd Desktop/jacinto
 3. eb open
