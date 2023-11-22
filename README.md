@@ -1,4 +1,4 @@
-# personal-website
+# Personal Website
 
 Live website:
 http://web-env.eba-nfmycmne.us-east-1.elasticbeanstalk.com/
