@@ -92,9 +92,12 @@ a.link-box:hover{
     border-radius: 60px;
 }
 
-body, ul {
+body, ul{
     margin: 0;
     padding: 0;
+}
+body{
+    background: lightblue;
 }
 .navbar {
     background-color: #338D91;

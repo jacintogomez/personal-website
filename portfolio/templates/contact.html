@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
     <style>
-        body{
-            background-color: lightblue;
-        }
         img{
             border-radius: 50%;
             align-items: center;
@@ -47,22 +44,20 @@
             background-color: #498EB3;
             border-color: #498EB3
         }
-
         .contact-block:nth-child(3):hover {
             background-color: #C13584;
             border-color: #C13584;
         }
         .block-row{
             display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
+            margin: 0 1%;
         }
     </style>
 </head>
 <body>
 {% include 'common/navbar.html' %}
     <h1 class="page-title">Contact Me</h1>
-    <div class="block-row">
+    <div class="block-row" style="margin-top: 5%;">
         <h3 class="contact-heading">GitHub</h3>
         <h3 class="contact-heading">LinkedIn</h3>
         <h3 class="contact-heading">Instagram</h3>
