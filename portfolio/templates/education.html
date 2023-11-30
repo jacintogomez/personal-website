@@ -33,8 +33,8 @@
             justify-content: space-evenly;
         }
         #stats1,#stats2{
-            color: #7600BC;
-            transition: color .8s;
+            background-color: #7600BC;
+            transition: background-color .8s;
         }
         .logo{
             flex: 1;
@@ -49,11 +49,11 @@
             width: auto;
             max-width: 30%;
             border-radius: 5%;
-            padding-right: 15%;
         }
         .descrip{
             text-align: center;
             padding: 3% 3%;
+            border-radius: 50px;
         }
     </style>
 </head>
@@ -69,7 +69,7 @@
             <h1>New York University</h1>
             <h2>Tandon School of Engineering</h2>
             <h2>Master of Science: Computer Science</h2>
-            <h2>Class of 2024</h2>
+            <h2>Class of 2024, GPA: 3.926</h2>
             <h3>Involvement: Cybersecurity Club, Rock Climbing Club</h3>
         </div>
     </div>
@@ -103,8 +103,8 @@
                 const sectionbot=sectiontop+section.offsetHeight;
                 if(scrollpos>=sectiontop&&scrollpos<sectionbot){
                     nav.style.backgroundColor=section.dataset.color;
-                    p1.style.color=section.dataset.color;
-                    p2.style.color=section.dataset.color;
+                    p1.style.backgroundColor=section.dataset.color;
+                    p2.style.backgroundColor=section.dataset.color;
                 }
             });
         });
