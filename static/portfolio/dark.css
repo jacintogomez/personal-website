@@ -1,0 +1,138 @@
+.page-title{
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.extern {
+    text-align: center;
+    padding: 0 0;
+    position: relative;
+}
+a.link-box{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: darkblue;
+    display: inline-block; /*consistent width and height*/
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+    line-height: 100px;
+    transition: transform .3s;
+    z-index: 1;
+}
+a.link-box:hover{
+    transform: scale(1.05);
+}
+.git-contain{
+    position: relative;
+    display: inline-block;
+}
+.git-half{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+.git-pin{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    margin: 35px;
+    transition: transform .3s;
+    max-height: 100%;
+}
+.git-pin:hover{
+    transform: scale(1.4);
+}
+
+.zoom{
+    transition: transform .2s;
+    width: 210px;
+    height: 105px;
+    margin: 0 auto;
+}
+.zoom:hover{
+    transform: scale(1.5);
+}
+
+.job-desc{
+    flex: 1;
+    text-align: center;
+}
+.job{
+    display: flex;
+    padding: 50px 0;
+}
+.picture-oval{
+    display: flex;
+    flex: 1;
+    align-items: center; /*center vertically*/
+    justify-content: center; /*center horizontally*/
+    margin: auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    border-radius: 60px;
+}
+
+body, ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: lightblue;
+}
+.navbar {
+    background-color: #338D91;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+.navbar-nav{
+    list-style: none;
+    display: flex;
+}
+.nav-item{
+    margin-right: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+.navbar-brand:hover{
+    opacity: 50%;
+    transform: none !important;
+}
+.nav-link:hover{
+    opacity: 50%;
+}
+
