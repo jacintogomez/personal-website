@@ -15,16 +15,16 @@
 }
 a.link-box{
     border-style: solid;
-    border-color: white;
+    border-color: black;
     border-width: 5px;
-    background-color: #338D91;
+    background-color: darkblue;
     display: inline-block; /*consistent width and height*/
     width: 200px;
     height: 100px;
     padding: 10px;
     margin: 25px;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 20px;
     position: relative;
     text-decoration: none;
@@ -113,7 +113,7 @@ body{
 .navbar-brand {
     font-size: 1.5rem;
     text-decoration: none;
-    color: white;
+    color: black;
     margin-left: 20px;
 }
 .navbar-nav{
@@ -125,7 +125,7 @@ body{
 }
 .nav-link{
     text-decoration: none;
-    color: white;
+    color: black;
     margin: 5px;
 }
 .navbar-brand:hover{
