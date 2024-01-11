@@ -1,12 +1,14 @@
 from django.urls import path
 from . import views
 
+app_name='portfolio'
+
 urlpatterns = [
     path('', views.home_page, name='home_page'),
     path('about/', views.about_page, name='about'),
     path('artwork/', views.artwork_page, name='artwork'),
     path('brackets/', views.brackets_page, name='brackets'),
-    path('contact', views.contact_page, name='contact'),
+    path('contact/', views.contact_page, name='contact'),
     path('d3clarity/', views.d3clarity, name='d3clarity'),
     path('d3color/', views.d3color, name='d3color'),
     path('d3aiddata/', views.d3aiddata, name='d3aiddata'),
