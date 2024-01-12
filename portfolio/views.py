@@ -87,4 +87,5 @@ def contact_form(request):
 
 
 def thank_you_page(request):
-    return render(request, 'thank_you.html', {})
+    redirect_to='/'
+    return render(request, 'thank_you.html', {'redirect_url':redirect_to})
