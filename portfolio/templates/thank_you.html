@@ -12,19 +12,17 @@
     <h1 class="page-title">Thank you for your feedback! :)</h1>
     <h2 id="msg" style="text-align:center">redirecting to home in 5 seconds...</h2>
     <script>
-        function countdown(){
-            let t=5
+        function countdown(t){
             let msg=document.getElementById('msg')
-            if(t<=0){
+            if(t<1){
                 window.location.href="/"
             }else{
                 t--
-                console.log('t is '+t)
                 msg.textContent='redirecting to home in '+t+' seconds...'
-                setTimeout(countdown,1000)
+                setTimeout(()=>countdown(t),1000)
             }
         }
-        setTimeout(countdown,1000)
+        setTimeout(()=>countdown(5),1000)
     </script>
 </body>
 </html>
