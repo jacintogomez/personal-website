@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback Form</title>
+        <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+        <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
+        <style>
+            .formcontent{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .formcontent form{
+                text-align: left;
+            }
+            .formcontent form label{
+                display: block;
+                margin-bottom: 10px;
+            }
+            .formcontent form input{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 16px;
+                border-radius: 5px;
+            }
+            .formcontent form textarea{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 16px;
+                border-radius: 5px;
+                border-width: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        {% include 'common/navbar.html' %}
+        <h1 class="page-title">Feedback</h1>
+        <div class="formcontent">
+            <div class="left">
+                <form method="post" action="{% url 'contact_form' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

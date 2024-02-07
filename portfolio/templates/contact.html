@@ -36,21 +36,36 @@
             border-width: 10px;
             transition: .5s;
         }
-        .contact-block:hover{
-            background-color: #6C6C70;
-            border-color: #6C6C70;
-        }
-        .contact-block:nth-child(2):hover {
-            background-color: #498EB3;
-            border-color: #498EB3
-        }
-        .contact-block:nth-child(3):hover {
-            background-color: #C13584;
-            border-color: #C13584;
+        .gm-block{
+            flex: 1;
+            display: flex;
+            background-color: lightblue;
+            margin: 10px;
+            border-radius: 50px;
+            border-style: solid;
+            border-color: #338D91;
+            border-width: 10px;
+            transition: .5s;
         }
         .block-row{
             display: flex;
             margin: 0 1%;
+        }
+        .contact-block:hover{
+            background-color: #6C6C70;
+            border-color: #6C6C70;
+        }
+        .contact-block:nth-child(2):hover{
+            background-color: #498EB3;
+            border-color: #498EB3
+        }
+        .contact-block:nth-child(3):hover{
+            background-color: #C13584;
+            border-color: #C13584;
+        }
+        .gm-block:hover{
+            background-color: mediumpurple;
+            border-color: mediumpurple;
         }
     </style>
 </head>
@@ -65,26 +80,41 @@
     <div class="block-row">
         <a href="https://github.com/jacintogomez" target="_blank" class="contact-block">
             <div class="inner-image">
-                <img src="static/img/github-logo.png">
+                <img src="../static/img/github-logo.png">
             </div>
             <div class="inner-image">
-                <img src="static/img/github-profile.png">
+                <img src="../static/img/github-profile.png">
             </div>
         </a>
         <a href="https://www.linkedin.com/in/jacinto-gomez/" target="_blank" class="contact-block">
             <div class="inner-image">
-                <img src="static/img/linkedin-logo.png">
+                <img src="../static/img/linkedin-logo.png">
             </div>
             <div class="inner-image">
-                <img src="static/img/linkedin-profile.jpeg">
+                <img src="../static/img/linkedin-profile.jpeg">
             </div>
         </a>
         <a href="https://www.instagram.com/jacinto_gomez/" target="_blank" class="contact-block">
             <div class="inner-image">
-                <img src="static/img/instagram-logo.png">
+                <img src="../static/img/instagram-logo.png">
             </div>
             <div class="inner-image">
-                <img src="static/img/instagram-profile.jpeg">
+                <img src="../static/img/instagram-profile.jpeg">
+            </div>
+        </a>
+    </div>
+    <div class="block-row">
+        <a class="contact-block" style="visibility:hidden">
+            <div class="inner-image">
+            </div>
+        </a>
+        <a href="/contactform" class="gm-block">
+            <div class="inner-image">
+                <img src="../static/img/gmail-logo.png">
+            </div>
+        </a>
+        <a class="contact-block" style="visibility:hidden">
+            <div class="inner-image">
             </div>
         </a>
     </div>
