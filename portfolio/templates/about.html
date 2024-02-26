@@ -7,23 +7,49 @@
     <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
     <style>
-        body{
-            background-color: lightblue;
-        }
         p{
-            margin: 0 270px;
+            margin: 2% 30% 0 30%;
+            text-align: center;
+        }
+        .cs-row{
+            display: flex;
+            justify-content: space-around;
+            margin: 4% 2%;
+        }
+        .language{
+            flex: 1;
+            text-align: center;
+            padding: 3% 3%;
+        }
+        .language img{
+            width: 100%;
         }
     </style>
 </head>
 <body>
 {% include 'common/navbar.html' %}
-<div class="center">
     <h1 class="page-title">About</h1>
     <p>
         I started this personal website in December 2022 to have a centralized location for
-        all of my school and personal projects, as well as demonstrate my proficiency with Django and
-        HTML/CSS. It was designed and created entirely by me.
+        all of my school and personal projects, as well as demonstrate my proficiency with
+        web design. It was designed and created entirely by me.
     </p>
-</div>
+    <div class="cs-row">
+        <div class="language">
+            <img src="{% static 'img/html.png' %}" alt="HTML">
+        </div>
+        <div class="language">
+            <img src="{% static 'img/css.png' %}" alt="CSS">
+        </div>
+        <div class="language">
+            <img src="{% static 'img/js.png' %}" alt="JavaScript">
+        </div>
+        <div class="language">
+            <img src="{% static 'img/django.png' %}" alt="Django">
+        </div>
+        <div class="language">
+            <img src="{% static 'img/python.png' %}" alt="Python">
+        </div>
+    </div>
 </body>
 </html>
