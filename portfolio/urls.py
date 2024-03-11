@@ -20,5 +20,4 @@ urlpatterns = [
     path('work_experience/', views.work_experience_page, name='work_experience'),
     path('contactform/', views.contact_form, name='contact_form'),
     path('thankyou/', views.thank_you_page, name='thank_you'),
-    path('doesnotexist/', views.does_not_exist, name='does_not_exist'),
 ]
