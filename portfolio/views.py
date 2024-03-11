@@ -89,3 +89,7 @@ def contact_form(request):
 def thank_you_page(request):
     redirect_to='/'
     return render(request, 'thank_you.html', {'redirect_url':redirect_to})
+
+def does_not_exist(request):
+    redirect_to='/'
+    return render(request, 'does_not_exist.html', {'redirect_url':redirect_to})
